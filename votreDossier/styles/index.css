@@ -1,0 +1,52 @@
+/*div
+{
+    border:2px solid black;
+}
+
+section
+{
+    border:2px solid red;
+}*/
+
+@font-face {
+    font-family: "AlexBrush-Regular";
+    src: url("../font/AlexBrush-Regular.ttf");
+
+}
+
+@font-face {
+    font-family: "Hendrickson-K7GOD";
+    src: url("../font/Hendrickson-K7GOD.otf");
+}
+
+@font-face {
+    font-family: "Mishella-w1Pdw";
+    src: url("../font/Mishella-w1Pdw.otf");
+}
+
+@font-face {
+    font-family: "HelloSoffie-z8e13";
+    src: url("../font/HelloSoffie-z8e13.ttf");
+    
+}
+
+body 
+{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #f7f7f7;
+}
+
+h1 span 
+{
+    font-family:"AlexBrush-Regular";
+    font-size:larger;
+}
+
+figure 
+{   /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 0.5em 0.5em 0.5em gainsboro;
+}
+
+section{
+    margin-top: 7em;
+}
