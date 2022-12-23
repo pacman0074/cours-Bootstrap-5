@@ -33,7 +33,49 @@ section
 body 
 {
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color: #f7f7f7;
+    /*background-color: #f7f7f7;*/
+    background-image: url("../images/background-body-5-bis.png");
+    background-attachment:fixed;
+    background-position: right;
+    background-size:cover;
+    background-clip: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+header
+{
+    
+    position:fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+   
+}
+
+.nav-link 
+{
+    color: black;
+    font-size:medium;
+}
+
+.nav-link:hover
+{
+    border-bottom :1px solid blue;
+}
+
+#Présentation 
+{
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8em;
+    /*mt-5 justify-content-around align-items-center*/
+}
+
+#Présentation h1,h2
+{
+    position: relative;
+    left : 80px;
 }
 
 h1 span 
@@ -42,11 +84,56 @@ h1 span
     font-size:larger;
 }
 
-figure 
+#Présentation figure 
 {   /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0.5em 0.5em 0.5em gainsboro;
+    position :relative;
+    top: 40px;
+    left: 80px;
 }
 
 section{
     margin-top: 7em;
 }
+
+.title-section
+{
+    text-align: center;
+    margin-bottom: 0.3em;
+    font-family:"AlexBrush-Regular";
+    font-size: 5em;
+}
+
+.progress
+{
+    margin-bottom: 3em;
+    height: 2em;
+}
+
+#Compétences h4
+{
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.card-body
+{
+    position: relative;
+    background-color: white;
+}
+
+#Langues img
+{
+    transition: transform 1s;
+}
+
+#Langues img:hover
+{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+}
+

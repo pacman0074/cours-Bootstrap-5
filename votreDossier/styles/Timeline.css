@@ -23,7 +23,7 @@
 .main-timeline .timeline:after {
     content: "";
     display: block;
-    clear: both
+    clear: both;
 }
 
 .main-timeline .icon {
@@ -35,7 +35,7 @@
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0
+    right: 0;
 }
 
 .main-timeline .icon:before,
@@ -73,7 +73,7 @@
     width: 50%;
     float: left;
     margin-top: 22px;
-    position: relative
+    position: relative;
 }
 
 .main-timeline .date-content:before {
@@ -85,7 +85,7 @@
     position: absolute;
     top: 0;
     right: 10px;
-    bottom: 0
+    bottom: 0;
 }
 
 .main-timeline .date-outer {
@@ -94,7 +94,7 @@
     font-size: 16px;
     text-align: center;
     margin: auto;
-    z-index: 1
+    z-index: 1;
 }
 
 .main-timeline .date-outer:before,
@@ -154,7 +154,8 @@
 .main-timeline .timeline-content {
     width: 50%;
     padding: 20px 0 20px 50px;
-    float: right
+    float: right;
+    text-align: center;
 }
 
 .main-timeline .title {
@@ -178,7 +179,7 @@
 
 .main-timeline .timeline:nth-child(2n) .timeline-content {
     padding: 20px 50px 20px 0;
-    text-align: right
+    text-align: center
 }
 
 @media only screen and (max-width: 991px) {

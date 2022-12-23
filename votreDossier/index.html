@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" type="text/css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
         <link rel="stylesheet" href="./styles/index.css" type="text/css"/>
@@ -9,9 +10,32 @@
         <title>Curriculum portfolio</title>
     </head>
     <body>
-        <header class="container-fluid bg-dark bg-opacity-25 bg-gradient mb-4 p-4">Curriculum Vitae</header>
-        <div class="container-fluid d-flex flex-column justify-content-evenly">
-            <section class="row container-fluid h-100 mt-5 justify-content-around align-items-center" id="Présentation">
+        <script async type="text/javascript">
+            document.getElementsByTagName("header").style.visibility = "hidden";
+            
+
+        </script>
+        <header class="container-fluid shadow mb-5 p-4">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link" href="#Présentation">Accueil</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#Expérience">Expériences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Formations">Formations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Compétences">Compétences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Langues">Langues</a>
+                </li>
+              </ul>
+        </header>
+        <div class="container-fluid">
+            <section class="row" id="Présentation">
                 <div class="col-6 text-center">
                     <h1>Je suis <span>Yannis AYOUAZ, </span> responsable de domaine applicatif</h1><br>
                     <h2>Bienvenue sur mon portfolio</h2>
@@ -22,93 +46,237 @@
                     </figure>
                 </div>
             </section>
-            <section class="container-fluid">
+            <section class="container-fluid" id="Expérience">
+                <div class="title-section">Expériences</div>
                 <div class="main-timeline">
-                
-                                        <!-- start experience section-->
-                                        <div class="timeline">
-                                            <div class="icon"></div>
-                                            <div class="date-content">
-                                                <div class="date-outer">
-                                                    <span class="date">
-                                                            <span class="month">2 Years</span>
-                                                    <span class="year">2013</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <h5 class="title">Visual Art &amp; Design</h5>
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- end experience section-->
-                
-                                        <!-- start experience section-->
-                                        <div class="timeline">
-                                            <div class="icon"></div>
-                                            <div class="date-content">
-                                                <div class="date-outer">
-                                                    <span class="date">
-                                                            <span class="month">1 Years</span>
-                                                    <span class="year">2015</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <h5 class="title">Product Designer</h5>
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- end experience section-->
-                
-                                        <!-- start experience section-->
-                                        <div class="timeline">
-                                            <div class="icon"></div>
-                                            <div class="date-content">
-                                                <div class="date-outer">
-                                                    <span class="date">
-                                                            <span class="month">2 Years</span>
-                                                    <span class="year">2016</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <h5 class="title">Web Designer</h5>
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- end experience section-->
-                
-                                        <!-- start experience section-->
-                                        <div class="timeline">
-                                            <div class="icon"></div>
-                                            <div class="date-content">
-                                                <div class="date-outer">
-                                                    <span class="date">
-                                                            <span class="month">2 Years</span>
-                                                    <span class="year">2018</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div class="timeline-content">
-                                                <h5 class="title">Graphic Designer</h5>
-                                                <p class="description">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat volutpat. Aenean interdum finibus efficitur. Praesent dapibus dolor felis, eu ultrices elit molestie.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <!-- end experience section-->
-                
-                                    </div>
+                    <!-- start experience section-->
+                    <div class="timeline">
+                        <div class="icon"></div>
+                        <div class="date-content">
+                            <div class="date-outer">
+                                <span class="date">
+                                        <span class="month">9 mois</span>
+                                <span class="year">2013</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="title">Sopra - Développeur</h5>
+                            <p class="description">
+                                Maintenance corrective et évolutive sur l’application de gestion de la rémunération variable des agents commerciaux de La Banque postale.
+                                <br>Développements PL/SQL java et C++, déploiements, chiffrages, rédactions de spécifications techniques, élaborations de cahiers de
+                                recettes.
+                                <br>Optimisation des performances de la base de données et des traitements associés : Indexation, Optimisation du code.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end experience section-->
+                    <!-- start experience section-->
+                    <div class="timeline">
+                        <div class="icon"></div>
+                        <div class="date-content">
+                            <div class="date-outer">
+                                <span class="date">
+                                    <span class="month">3 ans</span>
+                                    <span class="year">2014</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="title">Cetelem - Chef de projet MOE</h5>
+                            <p class="description">
+                                Gestion de projets métiers : dématérialisation des courriers de communications clients, fusion des sociétés financières.
+                                <br>Gestion de projets techniques : montée de versions Oracle 12c + migration vers la solution EXADATA Oracle, migration web services vers les serveurs AIX IBM.
+                                <br>Rédactions de spécifications fonctionnels, chiffrage, pilotage des équipes de développement, rédaction de la stratégie de recette, pilotage de la mise en production.
+                                <br>Responsable RUN : analyse fonctionnelle et technique d’anomalies, mise en place et recette des correctifs, pilotage du portefeuille des évolutions, qualification de l’incident suivant le SLA.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end experience section-->
+                    <!-- start experience section-->
+                    <div class="timeline">
+                        <div class="icon"></div>
+                        <div class="date-content">
+                            <div class="date-outer">
+                                <span class="date">
+                                        <span class="month">3 ans</span>
+                                <span class="year">2017</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="title">Coface - Chef de projet AMOA</h5>
+                            <p class="description">
+                                Gestion d’un projet : mise en place d’un outil groupe de facturation des assurés.
+                                <br>Organisation d’ateliers métiers pour définir les expressions de besoins du projet, communication en anglais (à l’oral et à l’écrit) l’écrit), rédactions de l’expression de besoins et des spécifications fonctionnelles, rédaction de la stratégie de recette.
+                                <br>Définition de la solution IT à mettre en oeuvre en termes de spécifications, d’implémentation du modèle de données et des services applicatifs associés.
+                                <br>Support pour les utilisateurs sur les nouveaux outils groupes.
+                                <br>Pilotage & coordination des livraisons avec les équipes techniques.
+                                <br>Organisation et pilotage de point de suivis avec les entités métiers dans le cadre du RUN
+                                <br>Migration base de données de l’outil de facturation locale vers l’outil de facturation groupe : spécifications fonctionnelles et techniques, développements PL/SQL.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end experience section-->
+                    <!-- start experience section-->
+                    <div class="timeline">
+                        <div class="icon"></div>
+                        <div class="date-content">
+                            <div class="date-outer">
+                                <span class="date">
+                                        <span class="month">Poste actuel</span>
+                                <span class="year">2020</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <h5 class="title">Neuflize OBC - Responsable de domaine applicatif</h5>
+                            <p class="description">
+                                Responsable d'applications dans le domaine clients : maintenance, évolution, support utilisateurs.
+                                <br>Gestion de projet : Mise en place d'un nouveau CRM, mise en place d'un outil groupe de calcul des risques LCB/FT.
+                                <br>Scrum master dans l'équipe agile client.
+                            </p>
+                        </div>
+                    </div>
+                 <!-- end experience section-->
                 </div>
             </section>
+            <section class="container-fluid" id="Compétences">
+                <div class="title-section">Compétences</div>
+                <div class="row mt-5">
+                    <div class="col-4">
+                        <h4>Développement</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>SQL, PLSQL (Oracle)</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Javascript</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>HTML, CSS, Bootstrap</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h4>Gestion de projet</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Esprit de synthèse</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Capacité d'adaptation</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Plannification</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h4>Systèmes</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Unix (ubuntu, Debian)</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>Windows</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <h6>AS400</h6>
+                            </div>
+                            <div class="col-6">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                  </div> -->
+            </section>
+            <section class="container-fluid" id="Langues">
+                <div class="title-section">Langues</div>
+                <div class="row mt-5 justify-content-evenly">
+                    <div class="col-2">
+                        <div class="card shadow overflow-hidden" style="width: 18rem; height: 27rem;">
+                            <img src="./images/speak-english-accent-anglais-tuc.jpg" class="card-img-top" alt="image langue anglais">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Anglais</h5>
+                                <p class="card-text">Que ce soit dans mon poste actuel ou précédemment à la COFACE, je pratique l'anglais au quotidien aussi bien à l'écrit qu'à l'orale dans le cadre de mes projets.</p>
+                                <p class="card-footer">Très bon niveau</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="card shadow overflow-hidden" style="width: 18rem; height: 27rem;">
+                            <img src="./images/espagnol.jpg" class="card-img-top" alt="image langue espagnol">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Espagnol</h5>
+                                <p class="card-text">Je ne pratique pas l'espagnol au quotidien mais j'ai beaucoup parlé cette langue durant ma jeunesse lors de voyages d'échanges.</p>
+                                <p class="card-footer position-relative" style="top: 1.5em;">Niveau moyen</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <section class="container-fluid" id="Formations">
+                    <div class="title-section">Diplômes & Formations</div>
+
+                </section>
         </div>
-        
     </body>
 </html>
